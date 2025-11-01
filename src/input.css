@@ -61,3 +61,9 @@
 
   @apply absolute z-0 left-0 top-0 w-full h-22 bg-[#DCF1FA]
 }
+
+
+.xotelka-main-2 {
+  border-bottom-right-radius: 66px;
+  border-bottom-left-radius: 66px;
+}
