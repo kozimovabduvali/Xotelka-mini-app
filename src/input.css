@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-inter-tight: 'Inter Tight', sans-serif;
+  --font-geologica: 'Geologica', sans-serif;
+  --text-display-32: 2rem;
+  --text-display-56: 3.5rem;
+  /* 56px */
+  /* Colors */
+  --color-primary: #2B2B2B;
+  --color-secondary: #4EB8E7;
+  --color-accent: #E9F8FF;
+  --color-gray: #CEE9F5
+
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-inter-tight text-primary !text-base !leading-none overflow-x-hidden
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-geologica
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+}
+
+
+@utility container-base {
+  @apply w-full max-w-264 mx-auto px-4
+}
+
+
+@utility main-btn {
+  @apply block bg-secondary text-white font-bold min-h-12.75 rounded-lg py-3 px-5 transition duration-300 hover:bg-secondary/75
+}
+
+
+@utility link-hover {
+  @apply transition duration-300 hover:text-primary/75 hover:underline underline-offset-4
+}
