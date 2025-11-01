@@ -45,6 +45,11 @@
 }
 
 
+@utility main-btn-for__mini {
+  @apply block bg-secondary text-white text-sm font-bold min-h-10.25 rounded-2xl py-2 px-5 transition duration-300 hover:bg-secondary/75
+}
+
+
 @utility link-hover {
   @apply transition duration-300 hover:text-primary/75 hover:underline underline-offset-4
 }
