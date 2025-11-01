@@ -319,6 +319,9 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
