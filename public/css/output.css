@@ -188,6 +188,9 @@
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -257,6 +260,12 @@
     width: calc(var(--spacing) * 2);
     height: calc(var(--spacing) * 2);
   }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
+  }
+  .h-27 {
+    height: calc(var(--spacing) * 27);
+  }
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
@@ -277,6 +286,17 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .resize {
     resize: both;
@@ -303,6 +323,30 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .\!bg-\[\#4291FF\] {
+    background-color: #4291FF !important;
+  }
+  .\!bg-\[\#B12D2D\] {
+    background-color: #B12D2D !important;
+  }
+  .\!bg-\[\#FFAE4C\] {
+    background-color: #FFAE4C !important;
+  }
+  .bg-\[\#4291FF\] {
+    background-color: #4291FF;
+  }
+  .bg-\[\#B12D2D\] {
+    background-color: #B12D2D;
+  }
+  .bg-\[\#FFAE4C\] {
+    background-color: #FFAE4C;
+  }
+  .bg-\[\#FFEBEB\] {
+    background-color: #FFEBEB;
+  }
+  .bg-\[\#FFF7ED\] {
+    background-color: #FFF7ED;
   }
   .bg-accent {
     background-color: var(--color-accent);
@@ -363,6 +407,27 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .hover\:\!bg-\[\#4291FF\]\/75 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, #4291FF 75%, transparent) !important;
+      }
+    }
+  }
+  .hover\:\!bg-\[\#B12D2D\]\/75 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, #B12D2D 75%, transparent) !important;
+      }
+    }
+  }
+  .hover\:\!bg-\[\#FFAE4C\]\/75 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, #FFAE4C 75%, transparent) !important;
+      }
+    }
+  }
 }
 @layer base {
   html {
@@ -404,6 +469,41 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -428,6 +528,14 @@
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
       --tw-duration: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-outline-style: solid;
