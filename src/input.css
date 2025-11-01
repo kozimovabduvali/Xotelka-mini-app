@@ -14,7 +14,6 @@
   --color-secondary: #4EB8E7;
   --color-accent: #E9F8FF;
   --color-gray: #CEE9F5
-
 }
 
 @layer base {
@@ -48,4 +47,12 @@
 
 @utility link-hover {
   @apply transition duration-300 hover:text-primary/75 hover:underline underline-offset-4
+}
+
+.xotelka-main::after {
+  content: '';
+  border-bottom-right-radius: 66px;
+  border-bottom-left-radius: 66px;
+
+  @apply absolute z-0 left-0 top-0 w-full h-22 bg-[#DCF1FA]
 }
