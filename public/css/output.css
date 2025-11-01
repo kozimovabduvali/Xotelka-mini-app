@@ -284,6 +284,9 @@
   .max-w-90 {
     max-width: calc(var(--spacing) * 90);
   }
+  .max-w-\[78\%\] {
+    max-width: 78%;
+  }
   .max-w-\[80\%\] {
     max-width: 80%;
   }
