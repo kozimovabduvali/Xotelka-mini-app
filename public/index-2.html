@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xotelka</title>
   <link rel="stylesheet" href="./css/output.css">
+  <style>
+    .modal-content {
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(100%);
+      /* boshlang‘ich holat */
+    }
+
+    .modal-content.active {
+      transform: translateY(0);
+      /* ochilganda yuqoriga chiqadi */
+    }
+  </style>
 </head>
 
 <body>
@@ -212,7 +224,7 @@
   <div class="bg-modal fixed hidden z-40 bottom-0 left-0 size-full bg-black/30">
     <!-- modal content  -->
     <div
-      class="absolute z-50 bottom-0 left-0 translate-y-full w-full h-[calc(100vh-200px)] bg-white rounded-3xl rounded-b-none modal-content transition-all duration-500 ease-in-out">
+      class="absolute z-50 bottom-0 left-0 w-full h-[calc(100vh-200px)] bg-white rounded-3xl rounded-b-none modal-content transition-all">
       <div class="size-full relative px-4">
         <div
           class="w-8 h-1 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-2 bg-white rounded-full cursor-pointer">

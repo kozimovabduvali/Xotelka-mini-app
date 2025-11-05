@@ -4,35 +4,33 @@ const modalContent = document.querySelector(".modal-content");
 
 // Modalni ochish
 filterBtn.addEventListener("click", () => {
-  // modal ko‘rinadigan holat
   bgModal.classList.remove("hidden");
   bgModal.classList.add("block");
 
-  modalContent.classList.remove("translate-y-full");
-  modalContent.classList.add("translate-y-0");
+  // CSS transition ishlashi uchun 1 frame kutamiz
+  setTimeout(() => {
+    modalContent.classList.add("active");
+  }, 10);
 
-  // sahifa scroll bo‘lmasin
   document.body.classList.add("overflow-hidden");
 });
 
-// Modalni yopish funksiyasi
+// Modalni yopish
 function closeModal() {
-  modalContent.classList.remove("translate-y-0");
-  modalContent.classList.add("translate-y-full");
+  modalContent.classList.remove("active");
   document.body.classList.remove("overflow-hidden");
 
-  // animatsiya tugagach modalni yashirish
+  // CSS animatsiya tugashini kutamiz (500ms)
   setTimeout(() => {
     bgModal.classList.remove("block");
     bgModal.classList.add("hidden");
-  }, 300);
+  }, 500);
 }
 
 // Modal tashqarisiga bosilganda yopish
 document.addEventListener("click", (e) => {
   const isModalOpen = bgModal.classList.contains("block");
 
-  // agar modal ochilgan bo‘lsa va bosilgan joy modal-content ichida bo‘lmasa
   if (
     isModalOpen &&
     !modalContent.contains(e.target) &&
