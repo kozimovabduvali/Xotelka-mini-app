@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="./css/output.css">
 </head>
 
-<body class="overflow-hidden">
+<body>
   <!-- Main -->
-  <main class="relative h-screen overflow-y-auto">
+  <main class="relative">
     <section class="relative p-4">
       <div class="xotelka-main-2 overflow-hidden absolute z-0 left-0 top-0 w-full h-22 bg-[#B12D2D]">
         <div class="size-full relative overflow-hidden">
@@ -209,94 +209,96 @@
   </main>
   <!-- Modal -->
   <!-- bg -->
-  <div class="bg-modal fixed hidden z-40 bottom-0 left-0 size-full bg-black/30"></div>
-  <!-- modal content  -->
-  <div
-    class="absolute z-50 bottom-0 left-0 translate-y-full w-full h-[calc(100vh-200px)] bg-white rounded-3xl rounded-b-none modal-content transition duration-300">
-    <div class="size-full relative px-4">
-      <div class="w-8 h-1 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-2 bg-white rounded-full cursor-pointer">
-      </div>
-      <div class="w-full max-w-90 mx-auto">
-        <div class="cursor-pointer text-center py-2 px-10 mb-5">
-          <p class="font-semibold text-lg">
-            Фильтр
-          </p>
+  <div class="bg-modal fixed hidden z-40 bottom-0 left-0 size-full bg-black/30">
+    <!-- modal content  -->
+    <div
+      class="absolute z-50 bottom-0 left-0 translate-y-full w-full h-[calc(100vh-200px)] bg-white rounded-3xl rounded-b-none modal-content transition-all duration-500 ease-in-out">
+      <div class="size-full relative px-4">
+        <div
+          class="w-8 h-1 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-2 bg-white rounded-full cursor-pointer">
         </div>
-
-
-        <div class="space-y-4 mb-8">
-          <!-- 1 -->
-          <div>
-            <p class="font-bold text-sm/5 mb-2">
-              Роль
+        <div class="w-full max-w-90 mx-auto">
+          <div class="cursor-pointer text-center py-2 px-10 mb-5">
+            <p class="font-semibold text-lg">
+              Фильтр
             </p>
+          </div>
 
-            <div class="flex items-center gap-1 text-sm/5">
-              <button
-                class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
-                Все
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Я создал
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Я участвую
-              </button>
+
+          <div class="space-y-4 mb-8">
+            <!-- 1 -->
+            <div>
+              <p class="font-bold text-sm/5 mb-2">
+                Роль
+              </p>
+
+              <div class="flex items-center gap-1 text-sm/5">
+                <button
+                  class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
+                  Все
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Я создал
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Я участвую
+                </button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div>
+              <p class="font-bold text-sm/5 mb-2">
+                Статус
+              </p>
+
+              <div class="flex items-center gap-1 text-sm/5">
+                <button
+                  class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
+                  Все
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Ожидают
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Разыграно
+                </button>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div>
+              <p class="font-bold text-sm/5 mb-2">
+                Дата
+              </p>
+
+              <div class="flex items-center gap-1 text-sm/5">
+                <button
+                  class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
+                  Все
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Предстоящие
+                </button>
+                <button
+                  class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
+                  Прошедшие
+                </button>
+              </div>
             </div>
           </div>
-          <!-- 2 -->
-          <div>
-            <p class="font-bold text-sm/5 mb-2">
-              Статус
-            </p>
 
-            <div class="flex items-center gap-1 text-sm/5">
-              <button
-                class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
-                Все
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Ожидают
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Разыграно
-              </button>
-            </div>
+          <div class="space-y-2 font-bold">
+            <button class="w-full min-h-12.75 border border-[#4EB8E7] text-[#4EB8E7] rounded-lg">
+              Сбросить
+            </button>
+            <button class="w-full min-h-12.75 border border-transparent bg-[#4EB8E7] text-white rounded-lg">
+              Применить
+            </button>
           </div>
-          <!-- 3 -->
-          <div>
-            <p class="font-bold text-sm/5 mb-2">
-              Дата
-            </p>
-
-            <div class="flex items-center gap-1 text-sm/5">
-              <button
-                class="border border-transparent bg-secondary text-white flex items-center justify-center rounded-lg h-9 px-4">
-                Все
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Предстоящие
-              </button>
-              <button
-                class="bg-transparent border border-[#E2E2E2] flex items-center justify-center rounded-lg h-9 px-4">
-                Прошедшие
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="space-y-2 font-bold">
-          <button class="w-full min-h-12.75 border border-[#4EB8E7] text-[#4EB8E7] rounded-lg">
-            Сбросить
-          </button>
-          <button class="w-full min-h-12.75 border border-transparent bg-[#4EB8E7] text-white rounded-lg">
-            Применить
-          </button>
         </div>
       </div>
     </div>
