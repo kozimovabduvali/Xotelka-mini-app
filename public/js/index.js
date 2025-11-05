@@ -1,38 +1,46 @@
-const filterBtn = document.querySelector(".filter-btn");
-const bgModal = document.querySelector(".bg-modal");
-const modalContent = document.querySelector(".modal-content");
+const qs = (s) => document.querySelector(s);
+const filterBtn = qs(".filter-btn");
+const bgModal = qs(".bg-modal");
+const modalContent = qs(".modal-content");
+const body = document.body;
 
-// Modalni ochish
+// Open modal
 filterBtn.addEventListener("click", () => {
-  bgModal.classList.remove("hidden");
-  bgModal.classList.add("block");
-
-  // CSS transition ishlashi uchun 1 frame kutamiz
-  setTimeout(() => {
-    modalContent.classList.add("active");
-  }, 10);
-
-  document.body.classList.add("overflow-hidden");
+  toggleModal(true);
 });
 
-// Modalni yopish
-function closeModal() {
-  modalContent.classList.remove("active");
-  document.body.classList.remove("overflow-hidden");
+// Toggle function
+function toggleModal(show) {
+  bgModal.classList.toggle("hidden", !show);
+  bgModal.classList.toggle("block", show);
+  body.classList.toggle("overflow-hidden", show);
 
-  // CSS animatsiya tugashini kutamiz (500ms)
-  setTimeout(() => {
-    bgModal.classList.remove("block");
-    bgModal.classList.add("hidden");
-  }, 500);
+  requestAnimationFrame(() => {
+    modalContent.classList.toggle("active", show);
+  });
 }
 
-// Modal tashqarisiga bosilganda yopish
-document.addEventListener("click", (e) => {
-  const isModalOpen = bgModal.classList.contains("block");
+// Close modal
+function closeModal() {
+  modalContent.classList.remove("active");
+  body.classList.remove("overflow-hidden");
+}
 
+// Wait for animation to finish
+modalContent.addEventListener("transitionend", (e) => {
   if (
-    isModalOpen &&
+    e.propertyName === "transform" &&
+    !modalContent.classList.contains("active")
+  ) {
+    bgModal.classList.add("hidden");
+    bgModal.classList.remove("block");
+  }
+});
+
+// Click outside to close
+document.addEventListener("click", (e) => {
+  if (
+    bgModal.classList.contains("block") &&
     !modalContent.contains(e.target) &&
     !filterBtn.contains(e.target)
   ) {
