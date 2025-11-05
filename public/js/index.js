@@ -1,20 +1,22 @@
+// Short query helper
 const qs = (s) => document.querySelector(s);
+
+// Elements
 const filterBtn = qs(".filter-btn");
 const bgModal = qs(".bg-modal");
 const modalContent = qs(".modal-content");
 const body = document.body;
 
 // Open modal
-filterBtn.addEventListener("click", () => {
-  toggleModal(true);
-});
+filterBtn.addEventListener("click", () => toggleModal(true));
 
-// Toggle function
+// Toggle modal visibility
 function toggleModal(show) {
   bgModal.classList.toggle("hidden", !show);
   bgModal.classList.toggle("block", show);
   body.classList.toggle("overflow-hidden", show);
 
+  // Wait one frame for transition trigger
   requestAnimationFrame(() => {
     modalContent.classList.toggle("active", show);
   });
@@ -26,7 +28,7 @@ function closeModal() {
   body.classList.remove("overflow-hidden");
 }
 
-// Wait for animation to finish
+// Wait for transition end to fully hide
 modalContent.addEventListener("transitionend", (e) => {
   if (
     e.propertyName === "transform" &&
@@ -37,13 +39,21 @@ modalContent.addEventListener("transitionend", (e) => {
   }
 });
 
-// Click outside to close
+// Close when clicking outside
 document.addEventListener("click", (e) => {
   if (
     bgModal.classList.contains("block") &&
     !modalContent.contains(e.target) &&
     !filterBtn.contains(e.target)
   ) {
+    closeModal();
+  }
+});
+
+// Close when clicking any button or link inside modal
+modalContent.addEventListener("click", (e) => {
+  const target = e.target.closest("button, a");
+  if (target) {
     closeModal();
   }
 });
