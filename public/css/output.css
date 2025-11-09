@@ -404,6 +404,9 @@
   .h-\[calc\(100vh-200px\)\] {
     height: calc(100vh - 200px);
   }
+  .h-full {
+    height: 100%;
+  }
   .h-max {
     height: max-content;
   }
@@ -445,6 +448,9 @@
   }
   .w-max {
     width: max-content;
+  }
+  .max-w-20 {
+    max-width: calc(var(--spacing) * 20);
   }
   .max-w-32 {
     max-width: calc(var(--spacing) * 32);
@@ -606,6 +612,9 @@
   .border-\[\#4EB8E7\] {
     border-color: #4EB8E7;
   }
+  .border-\[\#11AC28\] {
+    border-color: #11AC28;
+  }
   .border-\[\#51ABFF\] {
     border-color: #51ABFF;
   }
@@ -660,6 +669,9 @@
   .bg-\[\#EFEFEF\] {
     background-color: #EFEFEF;
   }
+  .bg-\[\#F0FFF2\] {
+    background-color: #F0FFF2;
+  }
   .bg-\[\#FFAE4C\] {
     background-color: #FFAE4C;
   }
@@ -692,6 +704,9 @@
   }
   .object-contain {
     object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -814,6 +829,9 @@
   .text-\[\#4EB8E7\] {
     color: #4EB8E7;
   }
+  .text-\[\#11AC28\] {
+    color: #11AC28;
+  }
   .text-\[\#49ADFF\] {
     color: #49ADFF;
   }
@@ -905,6 +923,9 @@
   }
   .gradient-main-card {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -10.06%, rgba(0, 0, 0, 0.21) 100%);
+  }
+  .gradient-main-card-2 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -31.13%, rgba(0, 0, 0, 0.65) 100%);
   }
   .hover\:\!bg-\[\#4291FF\]\/75 {
     &:hover {

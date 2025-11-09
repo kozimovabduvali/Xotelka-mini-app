@@ -20,8 +20,7 @@
 
         <div class="text-center mb-6">
           <h1 class="font-bold text-secondary text-2xl mb-2">
-            <!-- Мои вишлисты -->
-             Humoyin
+            Мои вишлисты
           </h1>
           <p class="text-sm/5 px-5">
             Создавай комнаты, приглашай друзей и разыгрывай пары автоматически
@@ -30,10 +29,10 @@
 
 
         <!-- cards -->
-        <div>
+        <div class="space-y-2">
           <!-- 1 -->
           <div class="relative bg-[#65C8FF] text-white rounded-2xl overflow-hidden min-h-40">
-            <div class="relative z-10 gradient-main-card min-h-40 p-4">
+            <div class="relative z-10 gradient-main-card flex flex-col justify-between gap-5 min-h-40 p-4">
               <div class="flex items-center justify-between gap-5">
                 <h3 class="font-bold">
                   Новогодняя игра
@@ -55,7 +54,7 @@
               </div>
 
 
-              <div>
+              <div class="flex items-center justify-between gap-5">
                 <div class="flex items-center gap-3">
                   <div class="text-sm flex items-center gap-1">
                     <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -68,7 +67,7 @@
                       1
                     </span>
                   </div>
-  
+
                   <div class="text-sm flex items-center gap-1">
                     <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +82,7 @@
                       0
                     </span>
                   </div>
-  
+
                   <div class="text-sm flex items-center gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="size-4 shrink-0">
@@ -96,9 +95,87 @@
                     </span>
                   </div>
                 </div>
-                <a href="#"></a>
+                <a href="#"
+                  class="text-xs/5 flex items-center justify-center bg-[#F0FFF2] text-[#11AC28] w-full max-w-20 min-h-6 border border-[#11AC28] rounded-lg">
+                  виден всем
+                </a>
               </div>
             </div>
+            <img src="./assets/images/wishlist.png" alt="Img"
+              class="absolute z-0 left-1/2 -translate-x-1/2 top-0 h-full object-contain">
+          </div>
+
+          <!-- 2 -->
+          <div class="relative bg-[#65C8FF] text-white rounded-2xl overflow-hidden min-h-40">
+            <div class="relative z-10 gradient-main-card-2 flex flex-col justify-between gap-5 min-h-40 p-4">
+              <div class="flex items-center justify-between gap-5">
+                <h3 class="font-bold">
+                  День рождения
+                </h3>
+
+                <button>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.00039 4.79998C7.11673 4.79998 6.40039 4.08363 6.40039 3.19998C6.40039 2.31632 7.11674 1.59998 8.00039 1.59998C8.88405 1.59998 9.60039 2.31632 9.60039 3.19998C9.60039 4.08363 8.88405 4.79998 8.00039 4.79998Z"
+                      fill="white" />
+                    <path
+                      d="M8.00039 9.59998C7.11673 9.59998 6.40039 8.88363 6.40039 7.99998C6.40039 7.11632 7.11674 6.39998 8.00039 6.39998C8.88405 6.39998 9.60039 7.11632 9.60039 7.99998C9.60039 8.88363 8.88405 9.59998 8.00039 9.59998Z"
+                      fill="white" />
+                    <path
+                      d="M8.00039 14.4C7.11673 14.4 6.40039 13.6836 6.40039 12.8C6.40039 11.9163 7.11674 11.2 8.00039 11.2C8.88405 11.2 9.60039 11.9163 9.60039 12.8C9.60039 13.6836 8.88405 14.4 8.00039 14.4Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between gap-5">
+                <div class="flex items-center gap-3">
+                  <div class="text-sm flex items-center gap-1">
+                    <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>
+                      1
+                    </span>
+                  </div>
+
+                  <div class="text-sm flex items-center gap-1">
+                    <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.59961 13.6749C1.59961 11.1579 3.70247 9.11744 7.99961 9.11744C12.2968 9.11744 14.3996 11.1579 14.3996 13.6749C14.3996 14.0754 14.1075 14.4 13.7471 14.4H2.25216C1.89177 14.4 1.59961 14.0754 1.59961 13.6749Z"
+                        stroke="white" stroke-width="1.5" />
+                      <path
+                        d="M10.3996 3.99998C10.3996 5.32546 9.32509 6.39997 7.99961 6.39997C6.67413 6.39997 5.59961 5.32546 5.59961 3.99998C5.59961 2.67449 6.67413 1.59998 7.99961 1.59998C9.32509 1.59998 10.3996 2.67449 10.3996 3.99998Z"
+                        stroke="white" stroke-width="1.5" />
+                    </svg>
+                    <span>
+                      0
+                    </span>
+                  </div>
+
+                  <div class="text-sm flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-4 shrink-0">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    <span>
+                      0
+                    </span>
+                  </div>
+                </div>
+                <a href="#"
+                  class="text-xs/5 flex items-center justify-center bg-[#F0FFF2] text-[#11AC28] w-full max-w-20 min-h-6 border border-[#11AC28] rounded-lg">
+                  виден всем
+                </a>
+              </div>
+            </div>
+            <img src="./assets/images/monkey.png" alt="Img" class="absolute z-0 left-0 top-0 size-full object-cover">
           </div>
         </div>
       </div>

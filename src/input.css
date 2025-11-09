@@ -67,6 +67,10 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -10.06%, rgba(0, 0, 0, 0.21) 100%);
 }
 
+@utility gradient-main-card-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -31.13%, rgba(0, 0, 0, 0.65) 100%);
+}
+
 .xotelka-main::after {
   content: '';
   border-bottom-right-radius: 66px;
