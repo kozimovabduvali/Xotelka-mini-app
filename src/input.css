@@ -62,6 +62,11 @@
   box-shadow: 0px 4px 24px 0px #A4A4A440;
 }
 
+
+@utility gradient-main-card {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -10.06%, rgba(0, 0, 0, 0.21) 100%);
+}
+
 .xotelka-main::after {
   content: '';
   border-bottom-right-radius: 66px;
