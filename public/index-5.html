@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xotelka</title>
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body>
+
+  <!-- main -->
+  <main class="w-full max-w-98 mx-auto p-4">
+    <section>
+      <!-- Назад -->
+      <a href="#" class="flex items-center gap-1 text-secondary text-sm w-max mb-3">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.0281 15L4.16699 10M4.16699 10L9.0281 5M4.16699 10H15.8337" stroke="#4EB8E7" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Назад
+      </a>
+
+      <div class="text-center mb-4">
+
+        <div class="size-14 rounded-full overflow-hidden bg-[#65C8FF] mx-auto mb-2">
+          <img src="./assets/images/wishlist.png" alt="img" class="size-full object-contain">
+        </div>
+        <p class="font-bold text-2xl/7 mb-1">
+          День рождения
+        </p>
+
+        <p class="text-xs/3.75 text-primary/60">
+          Создатель:
+          <span class="text-[#4EB8E7]">
+            Anna
+          </span>
+        </p>
+      </div>
+
+
+      <!-- Tabs wrapper -->
+      <div class="w-full max-w-md mx-auto">
+        <!-- Tabs header -->
+        <div
+          class="tabs flex items-center gap-0.5 bg-[#F6F6F6] border border-[#EFEFEF] rounded-[10px] p-0.5 text-sm/5 mb-8">
+          <button data-tab="all"
+            class="tab-btn bg-secondary text-white rounded-lg min-h-9 px-4 transition-colors duration-200">
+            Все
+          </button>
+          <button data-tab="free"
+            class="tab-btn bg-transparent text-primary rounded-lg min-h-9 px-4 transition-colors duration-200">
+            Свободные
+          </button>
+          <button data-tab="booked"
+            class="tab-btn bg-transparent text-primary rounded-lg min-h-9 px-4 transition-colors duration-200">
+            Забронированные
+          </button>
+        </div>
+
+        <!-- Tabs content -->
+        <div class="tabs-content">
+          <div class="tab-content all">
+            <div class="space-y-2">
+              <!-- 1 -->
+              <div class="border border-[#EEEEEE] rounded-2xl overflow-hidden p-3">
+                <div class="flex gap-4 mb-4">
+                  <div class="shrink-0 size-14 rounded-full overflow-hidden bg-[#DDF1FA]">
+                    <img src="./assets/images/wishlist-2.png" alt="img" class="size-full object-contain">
+                  </div>
+
+                  <div>
+                    <h4 class="font-bold font-inter-tight mb-2">
+                      Айпад
+                    </h4>
+
+                    <div class="toggle-container flex items-center gap-2">
+                      <p class="text-sm line-clamp-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi pariatur mollitia
+                        alias soluta ipsum necessitatibus quo quod explicabo fuga.
+                      </p>
+
+                      <button class="w-max toggle-btn bg-[#EDF9FF] text-secondary rounded-lg text-sm/5 py-1 px-2">
+                        Развернуть
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-2xl/8 font-bold font-inter-tight mb-4">
+                    50 000 руб.
+                  </h4>
+
+                  <div class="flex items-center gap-4">
+                    <a href="#"
+                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
+                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Ссылка
+                    </a>
+                    <a href="#"
+                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      Забронировать
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border border-[#EEEEEE] rounded-2xl overflow-hidden p-3">
+                <div class="flex gap-4 mb-4">
+                  <div class="shrink-0 size-14 rounded-full overflow-hidden bg-[#DDF1FA]">
+                    <img src="./assets/images/wishlist-2.png" alt="img" class="size-full object-contain">
+                  </div>
+
+                  <div>
+                    <h4 class="font-bold font-inter-tight mb-2">
+                      Айпад
+                    </h4>
+
+                    <div class="toggle-container flex items-center gap-2">
+                      <p class="text-sm line-clamp-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi pariatur mollitia
+                        alias soluta ipsum necessitatibus quo quod explicabo fuga.
+                      </p>
+
+                      <button class="w-max toggle-btn bg-[#EDF9FF] text-secondary rounded-lg text-sm/5 py-1 px-2">
+                        Развернуть
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-2xl/8 font-bold font-inter-tight mb-4">
+                    50 000 руб.
+                  </h4>
+
+                  <div class="flex items-center gap-4">
+                    <a href="#"
+                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
+                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Ссылка
+                    </a>
+                    <a href="#"
+                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      Забронировать
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border border-[#EEEEEE] rounded-2xl overflow-hidden p-3">
+                <div class="flex gap-4 mb-4">
+                  <div class="shrink-0 size-14 rounded-full overflow-hidden bg-[#DDF1FA]">
+                    <img src="./assets/images/wishlist-2.png" alt="img" class="size-full object-contain">
+                  </div>
+
+                  <div>
+                    <h4 class="font-bold font-inter-tight mb-2">
+                      Айпад
+                    </h4>
+
+                    <div class="toggle-container flex items-center gap-2">
+                      <p class="text-sm line-clamp-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi pariatur mollitia
+                        alias soluta ipsum necessitatibus quo quod explicabo fuga.
+                      </p>
+
+                      <button class="w-max toggle-btn bg-[#EDF9FF] text-secondary rounded-lg text-sm/5 py-1 px-2">
+                        Развернуть
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="text-2xl/8 font-bold font-inter-tight mb-4">
+                    50 000 руб.
+                  </h4>
+
+                  <div class="flex items-center gap-4">
+                    <a href="#"
+                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
+                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Ссылка
+                    </a>
+                    <a href="#"
+                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      Забронировать
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content free hidden">
+            <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+              <h3 class="font-medium text-gray-800 mb-2">Свободные</h3>
+              <p class="text-gray-600 text-sm">
+                This section displays only free items.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab-content booked hidden">
+            <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+              <h3 class="font-medium text-gray-800 mb-2">Забронированные</h3>
+              <p class="text-gray-600 text-sm">
+                This section displays only booked items.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Get all tab buttons and content sections
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selected = button.dataset.tab;
+
+        // Remove active styles from all buttons
+        tabButtons.forEach((btn) => {
+          btn.classList.remove("bg-secondary", "text-white");
+          btn.classList.add("bg-transparent", "text-primary");
+        });
+
+        // Add active styles to the clicked button
+        button.classList.add("bg-secondary", "text-white");
+        button.classList.remove("bg-transparent", "text-primary");
+
+        // Hide all content sections
+        tabContents.forEach((content) => content.classList.add("hidden"));
+
+        // Show the selected tab content
+        document.querySelector(`.tab-content.${selected}`).classList.remove("hidden");
+      });
+    });
+
+
+    // Select all toggle buttons
+    const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+    toggleButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const parent = btn.closest(".toggle-container");
+        const text = parent.querySelector("p");
+
+        // Check current state (expanded or not)
+        const expanded = btn.textContent.trim() === "Свернуть";
+
+        if (expanded) {
+          // Collapse
+          text.classList.add("line-clamp-1");
+          parent.classList.remove("flex-col");
+          parent.classList.add("items-center");
+
+          btn.textContent = "Развернуть";
+          btn.classList.remove("bg-[#EFEFEF]", "text-primary");
+          btn.classList.add("bg-[#EDF9FF]", "text-secondary");
+        } else {
+          // Expand
+          text.classList.remove("line-clamp-1");
+          parent.classList.remove("items-center");
+          parent.classList.add("flex-col");
+
+          btn.textContent = "Свернуть";
+          btn.classList.remove("bg-[#EDF9FF]", "text-secondary");
+          btn.classList.add("bg-[#EFEFEF]", "text-primary");
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
