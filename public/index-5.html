@@ -39,6 +39,31 @@
         </p>
       </div>
 
+      <div class="flex items-center gap-2 mb-6">
+        <button
+          class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 4L8 12M12 8L4 8" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+
+          Добавить хотелку
+        </button>
+
+        <button class="shrink-0 size-10 rounded-lg border border-secondary flex items-center justify-center">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.19976 13.0344H13.1998M2.7998 13.0344L5.71046 12.4479C5.86498 12.4168 6.00686 12.3407 6.11828 12.2292L12.6341 5.70985C12.9465 5.39729 12.9463 4.89063 12.6336 4.57832L11.2533 3.1996C10.9408 2.88742 10.4344 2.88764 10.1221 3.20008L3.60565 9.72011C3.49444 9.83138 3.4185 9.97297 3.38734 10.1272L2.7998 13.0344Z"
+              stroke="#4EB8E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="shrink-0 size-10 rounded-lg border border-secondary flex items-center justify-center">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.0001 7.63934L7.60013 3.39999L7.60013 5.79999C2 6.99999 2 12.6 2 12.6C2 12.6 4.4 9.39999 7.60013 9.79999L7.60013 12.28L14.0001 7.63934Z"
+              stroke="#4EB8E7" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
 
       <!-- Tabs wrapper -->
       <div class="w-full max-w-md mx-auto">
@@ -94,134 +119,26 @@
                     50 000 руб.
                   </h4>
 
-                  <div class="flex items-center gap-4">
-                    <a href="#"
-                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                  <div class=" grid grid-cols-2 gap-2">
+                    <button
+                      class="shrink-0 bg-[#EFEFEF] text-sm font-semibold flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
+                          d="M9.19976 13.0344H13.1998M2.7998 13.0344L5.71046 12.4479C5.86498 12.4168 6.00686 12.3407 6.11828 12.2292L12.6341 5.70982C12.9465 5.39725 12.9463 4.8906 12.6336 4.57829L11.2533 3.19957C10.9408 2.88739 10.4344 2.88761 10.1221 3.20005L3.60565 9.72008C3.49444 9.83135 3.4185 9.97294 3.38734 10.1271L2.7998 13.0344Z"
                           stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      Ссылка
-                    </a>
-                    <a href="#"
-                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
+                      Редактировать
+                    </button>
+                    <button
+                      class="shrink-0 bg-[#EFEFEF] text-sm font-semibold flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
-                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          d="M1.59961 3.60001H14.3996M5.59961 1.20001H10.3996M10.7996 14.8H5.19961C4.31595 14.8 3.59961 14.0837 3.59961 13.2L3.23433 4.43332C3.21539 3.97882 3.57874 3.60001 4.03364 3.60001H11.9656C12.4205 3.60001 12.7838 3.97882 12.7649 4.43332L12.3996 13.2C12.3996 14.0837 11.6833 14.8 10.7996 14.8Z"
+                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" />
                       </svg>
+                      Удалить
+                    </button>
 
-                      Забронировать
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- 1 -->
-              <div class="border border-[#EEEEEE] rounded-2xl overflow-hidden p-3">
-                <div class="flex gap-4 mb-4">
-                  <div class="shrink-0 size-14 rounded-full overflow-hidden bg-[#DDF1FA]">
-                    <img src="./assets/images/wishlist-2.png" alt="img" class="size-full object-contain">
-                  </div>
-
-                  <div>
-                    <h4 class="font-bold font-inter-tight mb-2">
-                      Айпад
-                    </h4>
-
-                    <div class="toggle-container flex items-center gap-2">
-                      <p class="text-sm line-clamp-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi pariatur mollitia
-                        alias soluta ipsum necessitatibus quo quod explicabo fuga.
-                      </p>
-
-                      <button class="w-max toggle-btn bg-[#EDF9FF] text-secondary rounded-lg text-sm/5 py-1 px-2">
-                        Развернуть
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div>
-                  <h4 class="text-2xl/8 font-bold font-inter-tight mb-4">
-                    50 000 руб.
-                  </h4>
-
-                  <div class="flex items-center gap-4">
-                    <a href="#"
-                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
-                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                      Ссылка
-                    </a>
-                    <a href="#"
-                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
-                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-
-                      Забронировать
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- 1 -->
-              <div class="border border-[#EEEEEE] rounded-2xl overflow-hidden p-3">
-                <div class="flex gap-4 mb-4">
-                  <div class="shrink-0 size-14 rounded-full overflow-hidden bg-[#DDF1FA]">
-                    <img src="./assets/images/wishlist-2.png" alt="img" class="size-full object-contain">
-                  </div>
-
-                  <div>
-                    <h4 class="font-bold font-inter-tight mb-2">
-                      Айпад
-                    </h4>
-
-                    <div class="toggle-container flex items-center gap-2">
-                      <p class="text-sm line-clamp-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi pariatur mollitia
-                        alias soluta ipsum necessitatibus quo quod explicabo fuga.
-                      </p>
-
-                      <button class="w-max toggle-btn bg-[#EDF9FF] text-secondary rounded-lg text-sm/5 py-1 px-2">
-                        Развернуть
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div>
-                  <h4 class="text-2xl/8 font-bold font-inter-tight mb-4">
-                    50 000 руб.
-                  </h4>
-
-                  <div class="flex items-center gap-4">
-                    <a href="#"
-                      class="shrink-0 bg-[#EFEFEF] text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.19961 1.59998H3.99961C2.67413 1.59998 1.59961 2.67449 1.59961 3.99998V12.0001C1.59961 13.3255 2.67413 14.4 3.99961 14.4H11.9996C13.3251 14.4 14.3996 13.3255 14.3996 12.0001V8.79998M10.3992 1.60017L14.3996 1.59998M14.3996 1.59998V5.20007M14.3996 1.59998L7.59902 8.39978"
-                          stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                      Ссылка
-                    </a>
-                    <a href="#"
-                      class="shrink-0 flex-1 bg-secondary text-white text-sm flex items-center justify-center rounded-lg min-h-10 gap-2 py-2 px-3">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M8.11597 14.4358V5.12667M7.03264 4.56821C7.14789 4.59407 7.26933 4.56237 7.35231 4.4794C7.43528 4.39643 7.46693 4.27494 7.44112 4.15974C7.33768 3.73722 6.95666 2.32239 6.56541 1.93114C6.07797 1.4437 5.28464 1.44167 4.79961 1.9267C4.31461 2.4117 4.31658 3.20503 4.80405 3.6925C5.2017 4.09015 6.61014 4.46478 7.03264 4.56821ZM8.21569 4.1597C8.18983 4.27495 8.22153 4.39639 8.3045 4.47937C8.38748 4.56234 8.50896 4.59399 8.62417 4.56818C9.04669 4.46474 10.4615 4.08372 10.8528 3.69247C11.3402 3.20503 11.3422 2.4117 10.8572 1.92667C10.3722 1.44167 9.57887 1.44363 9.0914 1.93111C8.69375 2.32876 8.31912 3.73719 8.21569 4.1597ZM2.06506 8.38485H13.9342C14.1912 8.38485 14.3996 8.17646 14.3996 7.9194V5.59212C14.3996 5.33506 14.1912 5.12667 13.9342 5.12667H2.06506C1.808 5.12667 1.59961 5.33506 1.59961 5.59212V7.9194C1.59961 8.17646 1.808 8.38485 2.06506 8.38485ZM13.236 8.38485V13.9703C13.236 14.2274 13.0276 14.4358 12.7705 14.4358H3.2287C2.97164 14.4358 2.76325 14.2274 2.76325 13.9703V8.38485H13.236Z"
-                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-
-                      Забронировать
-                    </a>
                   </div>
                 </div>
               </div>
